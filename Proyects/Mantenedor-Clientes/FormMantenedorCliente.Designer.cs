@@ -30,6 +30,7 @@
         {
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.groupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.cboCiudad = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtRucCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,8 +50,6 @@
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.cboCiudad = new System.Windows.Forms.ComboBox();
-            this.txtidCiudad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.groupBoxDatos.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +83,6 @@
             this.groupBoxDatos.Controls.Add(this.label1);
             this.groupBoxDatos.Controls.Add(this.dtPickerRegCliente);
             this.groupBoxDatos.Controls.Add(this.cbkEstadoCliente);
-            this.groupBoxDatos.Controls.Add(this.txtidCiudad);
             this.groupBoxDatos.Controls.Add(this.txtTipoCliente);
             this.groupBoxDatos.Controls.Add(this.txtRazonSocial);
             this.groupBoxDatos.Controls.Add(this.txtCliente);
@@ -96,6 +94,14 @@
             this.groupBoxDatos.TabIndex = 9;
             this.groupBoxDatos.TabStop = false;
             this.groupBoxDatos.Text = "Datos del Cliente";
+            // 
+            // cboCiudad
+            // 
+            this.cboCiudad.FormattingEnabled = true;
+            this.cboCiudad.Location = new System.Drawing.Point(124, 204);
+            this.cboCiudad.Name = "cboCiudad";
+            this.cboCiudad.Size = new System.Drawing.Size(199, 23);
+            this.cboCiudad.TabIndex = 21;
             // 
             // label4
             // 
@@ -324,22 +330,6 @@
             this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // cboCiudad
-            // 
-            this.cboCiudad.FormattingEnabled = true;
-            this.cboCiudad.Location = new System.Drawing.Point(124, 204);
-            this.cboCiudad.Name = "cboCiudad";
-            this.cboCiudad.Size = new System.Drawing.Size(199, 23);
-            this.cboCiudad.TabIndex = 21;
-            // 
-            // txtidCiudad
-            // 
-            this.txtidCiudad.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidCiudad.Location = new System.Drawing.Point(377, 209);
-            this.txtidCiudad.Name = "txtidCiudad";
-            this.txtidCiudad.Size = new System.Drawing.Size(199, 22);
-            this.txtidCiudad.TabIndex = 3;
-            // 
             // FormMantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,7 +375,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtRucCliente;
         private System.Windows.Forms.ComboBox cboCiudad;
-        private System.Windows.Forms.TextBox txtidCiudad;
     }
 }
 

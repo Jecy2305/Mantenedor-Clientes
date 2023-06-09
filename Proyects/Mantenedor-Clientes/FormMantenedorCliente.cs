@@ -20,7 +20,6 @@ namespace Mantenedor_Clientes
             InitializeComponent();
             ListarCliente();
             LlenarCboxCiudad();
-            txtidCiudad.Visible = false;
         }
 
         private void LimpiarVariables()
@@ -28,7 +27,6 @@ namespace Mantenedor_Clientes
             txtRazonSocial.Text = "";
             txtRucCliente.Text = "";
             txtTipoCliente.Text = "";
-            txtidCiudad.Text = "";
         }
 
         public void ListarCliente()
@@ -89,7 +87,7 @@ namespace Mantenedor_Clientes
                 c.rucCliente = txtRucCliente.Text.Trim();
                 c.idTipoCliente = int.Parse(txtTipoCliente.Text.Trim());
                 c.fecRegCliente = dtPickerRegCliente.Value;
-                c.idCiudad = int.Parse(txtidCiudad.Text.Trim());
+                c.idCiudad = int.Parse(cboCiudad.Text.Trim());
                 c.estCliente = cbkEstadoCliente.Checked;
                 logCliente.Instancia.EditaCliente(c);
             } catch (Exception ex) {
